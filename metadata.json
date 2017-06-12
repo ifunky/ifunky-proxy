@@ -1,0 +1,45 @@
+{
+  "name":         "ifunky-proxy",
+  "version":      "1.0.0",
+  "author":       "Dan Gibbons",
+  "license":      "MIT",
+  "summary":      "Configures proxy settings on Windows and Linux servers",
+  "source":       "",
+  "project_page": "",
+  "issues_url":   "",
+  "tags":         [ "utility", "windows", "linux", "proxy"  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5.0",
+        "6.0",
+        "7.0"
+      ]
+    },
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [ "2008 R2", "2012", "2012 R2" ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.15.0"
+    },
+    {
+      "name": "puppetlabs/powershell",
+      "version_requirement": ">= 1.0.4"
+    },
+    {
+      "name": "puppetlabs/windows_env",
+      "version_requirement": ">= 2.2.2"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.6.1 < 5.0.0"
+    }
+  ]
+}
